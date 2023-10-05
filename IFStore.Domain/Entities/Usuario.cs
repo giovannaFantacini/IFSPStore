@@ -9,13 +9,13 @@ namespace IFStore.Domain.Entities
 {
     public class Usuario : BaseEntity<int>
     {
-        public string nome { get; set; }
-        public string senha { get; set; }
-        public string login { get; set; }
-        public string email { get; set; }   
-        public DateTime dataCadastro { get; set; }
-        public DateTime dataLogin { get; set; }
-        public bool ativo { get; set; }
+        public string Nome { get; set; }
+        public string Senha { get; set; }
+        public string Login { get; set; }
+        public string Email { get; set; }   
+        public DateTime DataCadastro { get; set; }
+        public DateTime DataLogin { get; set; }
+        public bool Ativo { get; set; }
 
     }
 }

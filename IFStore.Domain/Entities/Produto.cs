@@ -9,12 +9,11 @@ namespace IFStore.Domain.Entities
 {
     public class Produto : BaseEntity<int>
     {
-        public string nome { get; set; }
-        public float preco { get; set; }
-        public int quantidade { get; set; }
-        public DateTime dataCompra { get; set; }
-        public string unidadeVenda { get; set; }    
-
+        public string Nome { get; set; }
+        public float Preco { get; set; }
+        public int Quantidade { get; set; }
+        public DateTime DataCompra { get; set; }
+        public string UnidadeVenda { get; set; }
         public Grupo Grupo { get; set; }
 
     }

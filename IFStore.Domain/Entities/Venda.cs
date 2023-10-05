@@ -12,22 +12,22 @@ namespace IFStore.Domain.Entities
     {
         public Venda()
         {
-            items = new List<VendaItem>();
+            Items = new List<VendaItem>();
         }
-        public DateTime data { get; set; }
-        public float valorTotal { get; set; }
-        public Usuario usuario { get; set; }
-        public Cliente cliente { get; set; }
-        public List<VendaItem> items { get; set; }
+        public DateTime Data { get; set; }
+        public float ValorTotal { get; set; }
+        public Usuario Usuario { get; set; }
+        public Cliente Cliente { get; set; }
+        public List<VendaItem> Items { get; set; }
     }
 
     public class VendaItem : BaseEntity<int>
     {
-        public Produto produto { get; set; }
-        public int quantidade { get; set; }
-        public float valorUnitario { get; set; }    
-        public float valorTotal { get; set; }
+        public Produto Produto { get; set; }
+        public int Quantidade { get; set; }
+        public float ValorUnitario { get; set; }    
+        public float ValorTotal { get; set; }
         [JsonIgnore]
-        public Venda venda { get; set; }
+        public Venda Venda { get; set; }
     }
 }

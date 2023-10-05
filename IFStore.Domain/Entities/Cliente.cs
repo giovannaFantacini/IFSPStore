@@ -9,11 +9,11 @@ namespace IFStore.Domain.Entities
 {
     public class Cliente : BaseEntity<int>
     {
-        public string nome { get; set; }
-        public string endereco { get; set; }
+        public string Nome { get; set; }
+        public string Endereco { get; set; }
         
-        public string bairro { get; set; }
+        public string Bairro { get; set; }
 
-        public Cidade cidade { get; set; }
+        public Cidade Cidade { get; set; }
     }
 }

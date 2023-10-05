@@ -9,6 +9,6 @@ namespace IFStore.Domain.Entities
 {
     public class Grupo : BaseEntity<int>
     {
-        public string nome { get; set; } 
+        public string Nome { get; set; } 
     }
 }
